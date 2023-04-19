@@ -1,0 +1,44 @@
+.PNF-container {
+  height: 100vh;
+}
+
+.PNF-wrapper {
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
+
+  padding: 0 100px;
+
+  > p {
+    font-weight: 700;
+    line-height: 40px;
+    padding: 25px 0;
+  }
+
+  > p:nth-child(2) {
+    font-size: 34px;
+  }
+
+  > p:nth-child(3) {
+    font-size: 100px;
+
+    i {
+      font-style: normal;
+      color: $accent;
+    }
+  }
+
+  > a {
+    margin-top: 18px;
+    font-size: 11px;
+  }
+
+  > h1 {
+    position: absolute;
+    z-index: -1;
+    color: rgba(#0f0f0f, 0.6);
+    font-size: 110px;
+    line-height: 90px;
+    letter-spacing: -0.7px;
+  }
+}

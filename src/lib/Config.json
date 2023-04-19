@@ -1,0 +1,58 @@
+{
+  "header": [
+    { "item": "landing" },
+    { "item": "about" },
+    { "item": "skills" },
+    { "item": "projects" }
+  ],
+  "skills": [
+    { "item": "TypeScript", "percentage": "40%" },
+    { "item": "JavaScript", "percentage": "35%" },
+    { "item": "C#", "percentage": "40%" },
+    { "item": "Unity", "percentage": "60%" },
+    { "item": "CSS", "percentage": "80%" },
+    { "item": "SCSS", "percentage": "80%" }
+  ],
+  "projects": [
+    {
+      "item": "Website",
+      "subTitle": "This beautifully designed website.",
+      "description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript",
+      "image": "https://cdn.jobgamesjg.xyz/files/website.png",
+      "buttons": [
+        { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/website" },
+        { "icon": "fa-solid fa-arrow-up-right-from-square", "link": "https://jobgamesjg.xyz/" }
+      ],
+      "position": true
+    },
+    {
+      "item": "Game?",
+      "subTitle": "Currently working on a game",
+      "description": "I'm currently working on a game, no spoilers yet! You will just have to wait.",
+      "image": "https://cdn.jobgamesjg.xyz/files/Secret.png",
+      "buttons": [
+        { "icon": "fa-solid fa-question", "link": "" },
+        { "icon": "fa-solid fa-question", "link": "" }
+      ],
+      "position": false
+    }
+  ],
+  "footer": [
+    {
+      "icon": "fa-brands fa-github",
+      "link": "https://github.com/JobGamesJG"
+    },
+    {
+      "icon": "fa-brands fa-youtube",
+      "link": "https://www.youtube.com/channel/UCB76PdQLx9wg4DCKbsVhyvA"
+    },
+    {
+      "icon": "fa-brands fa-twitter",
+      "link": "https://twitter.com/JobGamesJG"
+    },
+    {
+      "icon": "fa-brands fa-tiktok",
+      "link": "https://www.tiktok.com/@jobgamesjg"
+    }
+  ]
+}

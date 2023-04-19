@@ -1,0 +1,79 @@
+.about-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+
+  padding: 0 100px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 50px;
+  }
+}
+
+.about-skillsBox {
+  width: 100%;
+
+  > p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: $accent;
+    font-weight: 700;
+  }
+
+  > h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
+  }
+}
+
+.about-infobox {
+  width: 100%;
+
+  text-align: justify;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+
+  > p {
+    color: $text-darker;
+  }
+}
+
+.about-quote {
+  margin-top: 50px;
+
+  i {
+    color: $text-darker;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .about-container {
+    height: 100%;
+  }
+
+  .about-wrapper {
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+
+      gap: 50px;
+    }
+  }
+
+  .about-infobox,
+  .about-quote {
+    text-align: center;
+  }
+}

@@ -1,7 +1,7 @@
 export * from "./Header";
 export * from "./Footer";
 
-export * from "./items/Landing";
-export * from "./items/About";
-export * from "./items/Projects";
-export * from "./items/Skills";
+export * from "./Items/Landing";
+export * from "./Items/About";
+export * from "./Items/Projects";
+export * from "./Items/Skills";

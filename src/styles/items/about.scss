@@ -1,0 +1,68 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto auto 50px auto;
+
+  justify-content: space-between;
+  align-items: center;
+
+  display: flex;
+
+  img {
+    width: 500px;
+  }
+}
+
+.about-skillsBox {
+  width: 100%;
+
+  > h1 {
+    margin-top: 20px;
+  }
+}
+
+.about-infoBox {
+  width: 100%;
+
+  text-align: justify;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: $text-darker;
+}
+
+.about-quote {
+  max-width: 1200px;
+  width: 100%;
+
+  i {
+    color: $text-darker;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .about-container {
+    height: 100%;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 50px;
+  }
+
+  .about-infoBox,
+  .about-quote {
+    text-align: center;
+  }
+}

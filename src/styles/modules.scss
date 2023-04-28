@@ -1,0 +1,64 @@
+.item {
+  width: 100%;
+  min-height: 70vh;
+
+  padding: 100px;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 765px) {
+  .item {
+    padding: 50px;
+  }
+}
+
+.button {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: $text;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &.text-decoration {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  &.border {
+    border-bottom: 1px solid $accent;
+    border-left: 1px solid $accent;
+
+    padding: 9px 15px 9px 15px !important;
+    display: inline-block;
+
+    &:hover {
+      padding: 9px 0 9px 30px !important;
+      background-color: rgba($accent, 0.3);
+      color: unset;
+    }
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  color: $accent;
+  font-weight: 700;
+
+  &.main {
+    line-height: 44px;
+    font-size: 38px;
+
+    text-transform: unset;
+    letter-spacing: unset;
+    color: unset;
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+$accent: #689af8;
+$page-bg: #000;
+$module-bg: #0c0c0c;
+$text: #eff1f3;
+$text-darker: #999;
+
+* {
+  font-family: "Poppins", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  margin: 0;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  color: $text;
+  font-style: normal;
+
+  scroll-behavior: smooth !important;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: $page-bg;
+}
+
+a {
+  text-decoration: none;
+
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+@import "./header.scss";
+@import "./modules.scss";
+@import "./footer.scss";
+
+@import "./items/landing.scss";
+@import "./items/about.scss";
+@import "./items/skills.scss";
+@import "./items/projects.scss";

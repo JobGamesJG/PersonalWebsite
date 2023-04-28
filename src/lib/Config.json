@@ -1,0 +1,95 @@
+{
+  "header": [
+    { "item": "landing" },
+    { "item": "about" },
+    { "item": "skills" },
+    { "item": "projects" }
+  ],
+  "about": {
+    "quotes": [
+      {
+        "quote": "A battle doesn't end when the enemy has won, it ends when you give up."
+      },
+      {
+        "quote": "Burn the boat."
+      },
+      {
+        "quote": "It's not what happens to us, that matters. Its the way how you react to it that does."
+      },
+      {
+        "quote": "The happiness of your life depends upon the quality of your thoughts."
+      },
+      {
+        "quote": "A name doesn't divine a person, there acts do."
+      },
+      {
+        "quote": "Those we love don't go away, they walk beside us everyday, unseen unheard but always near, still loved, still missed and very dear."
+      },
+      {
+        "quote": "If no one comes from the future to stop you from doing it then how bad of a decision can it really be."
+      },
+      {
+        "quote": "Accept what is, let go of what was, and have faith in what will be."
+      }
+    ]
+  },
+  "skills": {
+    "Technical": [
+      { "item": "TypeScript", "percentage": "40%" },
+      { "item": "JavaScript", "percentage": "35%" },
+      { "item": "C#", "percentage": "40%" },
+      { "item": "Unity", "percentage": "60%" },
+      { "item": "CSS", "percentage": "80%" },
+      { "item": "SCSS", "percentage": "80%" }
+    ],
+    "Professional": [
+      { "item": "Communication", "percentage": "90%" },
+      { "item": "Project Mangement", "percentage": "87%" },
+      { "item": "Creativity", "percentage": "53%" },
+      { "item": "Team work", "percentage": "66%" }
+    ]
+  },
+
+  "projects": [
+    {
+      "item": "Website",
+      "subTitle": "This beautifully designed website.",
+      "description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript",
+      "image": "https://cdn.jobgamesjg.xyz/files/website.png",
+      "buttons": [
+        { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/website" },
+        { "icon": "fa-solid fa-arrow-up-right-from-square", "link": "https://jobgamesjg.xyz/" }
+      ],
+      "position": true
+    },
+    {
+      "item": "Game?",
+      "subTitle": "Currently working on a game",
+      "description": "I'm currently working on a game, no spoilers yet! You will just have to wait.",
+      "image": "https://cdn.jobgamesjg.xyz/files/Secret.png",
+      "buttons": [
+        { "icon": "fa-solid fa-question", "link": "" },
+        { "icon": "fa-solid fa-question", "link": "" }
+      ],
+      "position": false
+    }
+  ],
+  "footer": [
+    {
+      "icon": "fa-brands fa-github",
+      "link": "https://github.com/JobGamesJG"
+    },
+    {
+      "icon": "fa-brands fa-youtube",
+      "link": "https://www.youtube.com/channel/UCB76PdQLx9wg4DCKbsVhyvA"
+    },
+    {
+      "icon": "fa-brands fa-twitter",
+      "link": "https://twitter.com/JobGamesJG"
+    },
+    {
+      "icon": "fa-brands fa-tiktok",
+      "link": "https://www.tiktok.com/@jobgamesjg"
+    }
+  ]
+}

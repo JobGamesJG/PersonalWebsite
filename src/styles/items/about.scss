@@ -1,12 +1,16 @@
 .about-container {
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
 }
 
 .about-wrapper {
   max-width: 1200px;
   width: 100%;
-  margin: auto auto 50px auto;
 
   justify-content: space-between;
   align-items: center;
@@ -20,10 +24,6 @@
 
 .about-skillsBox {
   width: 100%;
-
-  > h1 {
-    margin-top: 20px;
-  }
 }
 
 .about-infoBox {

@@ -11,14 +11,14 @@ export const Landing = () => {
             <br />
             Developer
           </h1>
-          <motion.p variants={LandingItemAnimations(0)} initial="initial" animate="animate">
+          <motion.p variants={LandingItemAnimations(5)} initial="initial" animate="animate">
             Hello, it&apos;s me
           </motion.p>
-          <motion.p variants={LandingItemAnimations(1)} initial="initial" animate="animate">
+          <motion.p variants={LandingItemAnimations(6)} initial="initial" animate="animate">
             Job<i>.</i>
           </motion.p>
           <motion.a
-            variants={LandingItemAnimations(2)}
+            variants={LandingItemAnimations(7)}
             initial="initial"
             animate="animate"
             className="button border text-decoration"
@@ -27,7 +27,7 @@ export const Landing = () => {
           </motion.a>
         </div>
         <motion.img
-          variants={LandingItemAnimations(3)}
+          variants={LandingItemAnimations(8)}
           initial="initial"
           animate="animate"
           src="https://cdn.jobgamesjg.xyz/files/ProfilePictureEdited.png"

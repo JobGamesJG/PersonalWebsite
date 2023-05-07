@@ -46,9 +46,9 @@ export const About = () => {
           variants={InToView(1)}
           initial="initial"
           whileInView={"inView"}>
-          Hi, I am Job. A {age.toPrecision(9)} ... year-old coder and anime lover from the
-          Netherlands. Who knew making poorly programmed roblox games would get me this far. I quess
-          tutorials and my brothers help brought me to this point.
+          Hi, I am Job. A {age.toPrecision(3)} ... year-old programmer from the Netherlands. Who
+          knew making poorly programmed roblox games would get me this far. I quess tutorials and my
+          brothers help brought me to this point.
           <br />
           Besides programming, I love playing games, field hockey and other sports. I have the best
           friends in the world. That is also why I like to spend time with them and with my family

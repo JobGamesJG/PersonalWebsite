@@ -9,8 +9,7 @@ export const Skills = () => {
 
   return (
     <section id="skills" className="skills-container item">
-      <motion.h1
-        className="title"
+      <motion.div
         viewport={{
           once: true,
           amount: 1,
@@ -18,19 +17,9 @@ export const Skills = () => {
         variants={InToView(0)}
         initial="initial"
         whileInView={"inView"}>
-        skills
-      </motion.h1>
-      <motion.p
-        className="title main"
-        viewport={{
-          once: true,
-          amount: 1,
-        }}
-        variants={InToView(1)}
-        initial="initial"
-        whileInView={"inView"}>
-        What can I do?
-      </motion.p>
+        <p className="title">skills</p>
+        <h1 className="title main">What can I do?</h1>
+      </motion.div>
       <div className="skills-wrapper">
         <div className="skills-technicalSkillsBox">
           {config.skills.Technical.map((data, key) => (

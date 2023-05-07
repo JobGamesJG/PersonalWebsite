@@ -9,10 +9,9 @@
   max-width: 1200px;
   width: 100%;
 
-  > p,
-  > h1 {
-    width: 100%;
-    text-align: right;
+  > div {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -6,22 +6,23 @@ export const Projects = () => {
   return (
     <section id="projects" className="projects-container item">
       <div className="projects-wrapper">
-        <h1 className="title">My Projects</h1>
-        <p className="title main">What projects have I worked on?</p>
         <motion.div
-          className="projects"
           viewport={{
             once: true,
-            amount: 0.8,
+            amount: 1,
           }}
-          variants={InToView(1)}
+          variants={InToView(0)}
           initial="initial"
           whileInView={"inView"}>
+          <p className="title">My Projects</p>
+          <h1 className="title main">What projects have I worked on?</h1>
+        </motion.div>
+        <div className="projects">
           {config.projects.map((data, key) => (
             <motion.div
               viewport={{
                 once: true,
-                amount: 1,
+                amount: 0.1,
               }}
               variants={InToView(key)}
               initial="initial"
@@ -44,7 +45,7 @@ export const Projects = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -20,6 +20,5 @@ This is a portfolio website fully build by me. I have used sass, javascript and 
 👤 **JobK**
 
 -   Website: https://jobgamesjg.xyz/
--   Email: <hi@ijskoud.dev>
 -   Twitter: [@jobgamesjg](https://twitter.com/JobGamesJG)
 -   Github: [@jobgamesjg](https://github.com/JobGamesJG)

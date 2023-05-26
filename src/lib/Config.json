@@ -54,7 +54,7 @@
       "description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript",
       "image": "https://cdn.jobgamesjg.xyz/files/website.png",
       "buttons": [
-        { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/website" },
+        { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/PersonalWebsite" },
         { "icon": "fa-solid fa-arrow-up-right-from-square", "link": "https://jobgamesjg.xyz/" }
       ],
       "position": true

@@ -1,44 +1,7 @@
-import { motion, AnimatePresence, useAnimation, Variants } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 
-const variants2: Variants = {
-    disabled: {
-        opacity: 0,
-        transition: {
-            duration: 0.5,
-            ease: [0.6, -0.05, 0.01, 0.99],
-        },
-    },
-    enabled: {
-        opacity: 1,
-        transition: {
-            duration: 0.5,
-            ease: [0.6, -0.05, 0.01, 0.99],
-        },
-    },
-};
-
-const variants3: Variants = {
-    disabled: {
-        opacity: 0,
-        scale: 0.8,
-        transition: {
-            duration: 0.3,
-            delay: 0.05,
-            ease: [0.6, -0.05, 0.01, 0.99],
-        },
-    },
-    enabled: {
-        opacity: 1,
-        scale: 1,
-        transition: {
-            duration: 0.3,
-            delay: 0.05,
-            ease: [0.6, -0.05, 0.01, 0.99],
-        },
-    },
-};
+import { ProjectsVisibleHidden, ProjectsGrow, InToView } from "@/lib";
 
 export const ProjectCard = (props: any) => {
     const [active, setActive] = useState(false);
@@ -55,13 +18,13 @@ export const ProjectCard = (props: any) => {
                 <motion.div
                     className={`modal-container ${active ? "active" : ""}`}
                     animate={control}
-                    variants={variants2}
+                    variants={ProjectsVisibleHidden}
                     initial="disabled">
                     <motion.div
                         className="modal"
                         animate={control}
                         initial="disabled"
-                        variants={variants3}>
+                        variants={ProjectsGrow}>
                         <div className="modal-header">
                             <p className="title">{props.title}</p>
                             <a
@@ -110,9 +73,16 @@ export const ProjectCard = (props: any) => {
                     </motion.div>
                 </motion.div>
             )}
-            <div
+            <motion.div
                 className={`projects-item ${active ? "active" : ""}`}
-                onClick={() => setActive(!active)}>
+                onClick={() => setActive(!active)}
+                viewport={{
+                    once: true,
+                    amount: 0.1,
+                }}
+                variants={InToView(props.number + 1)}
+                initial="initial"
+                whileInView={"inView"}>
                 <img src={props.image} alt="" />
                 <div>
                     <div>
@@ -120,7 +90,7 @@ export const ProjectCard = (props: any) => {
                     </div>
                     <p>{props.subTitle}</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

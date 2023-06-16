@@ -1,12 +1,7 @@
 import config from "../../../lib/Config.json";
-import { motion } from "framer-motion";
-import { InToView } from "../../../lib";
-import { useState } from "react";
 import { ProjectCard } from "./projectCard";
 
 export const Projects = () => {
-    const [active, setActive] = useState(false);
-
     return (
         <section id="projects" className="projects-container item">
             <div className="projects-wrapper">

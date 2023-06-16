@@ -19,7 +19,15 @@ export const About = () => {
     return (
         <section id="about" className="about-container item">
             <div className="about-wrapper">
-                <div className="about-hobby">
+                <motion.div
+                    className="about-hobby"
+                    viewport={{
+                        once: true,
+                        amount: 0.1,
+                    }}
+                    variants={InToView(0)}
+                    initial="initial"
+                    whileInView={"inView"}>
                     <p className="title">My Hobby&apos;s</p>
                     <h1 className="title main">
                         Programming,
@@ -38,8 +46,16 @@ export const About = () => {
                     <p className="about-quote">
                         A random quote: <i>&quot;{config.about.quotes[randomNumber].quote}&quot;</i>
                     </p>
-                </div>
-                <p className="about-info">
+                </motion.div>
+                <motion.p
+                    className="about-info"
+                    viewport={{
+                        once: true,
+                        amount: 0.1,
+                    }}
+                    variants={InToView(1)}
+                    initial="initial"
+                    whileInView={"inView"}>
                     Hi, I am Job. A {age.toPrecision(9)} ... year-old programmer from the
                     Netherlands. Who knew making poorly programmed roblox games would get me this
                     far. Maybe all the tutorials and the help from my brother brought me to this
@@ -61,7 +77,7 @@ export const About = () => {
                     and just have fun with the boys. I play all kinds of games, from story games to
                     battle royales. Uncharted is one of my favorites. I&apos;m currently working on
                     a game. I don&apos;t know if I&apos;m going to finnish it, but i&apos;ll try.
-                </p>
+                </motion.p>
             </div>
         </section>
     );

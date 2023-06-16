@@ -1,92 +1,120 @@
 {
-  "header": [
-    { "item": "landing" },
-    { "item": "about" },
-    { "item": "skills" },
-    { "item": "projects" }
-  ],
-  "about": {
-    "quotes": [
-      {
-        "quote": "A battle doesn't end when the enemy has won, it ends when you give up."
-      },
-      {
-        "quote": "Burn the boat."
-      },
-      {
-        "quote": "It's not what happens to us, that matters. It's the way how you react to it that does."
-      },
-      {
-        "quote": "The happiness of your life depends upon the quality of your thoughts."
-      },
-      {
-        "quote": "A name doesn't divine a person, their acts do."
-      },
-      {
-        "quote": "Those we love don't go away, they walk beside us everyday, unseen unheard but always near, still loved, still missed and very dear."
-      },
-      {
-        "quote": "Accept what is, let go of what was, and have faith in what will be."
-      }
-    ]
-  },
-  "skills": {
-    "Technical": [
-      { "item": "TypeScript", "percentage": "40%" },
-      { "item": "JavaScript", "percentage": "35%" },
-      { "item": "C#", "percentage": "40%" },
-      { "item": "Unity", "percentage": "60%" },
-      { "item": "CSS", "percentage": "80%" },
-      { "item": "SCSS", "percentage": "80%" }
+    "header": [
+        { "item": "landing" },
+        { "item": "about" },
+        { "item": "skills" },
+        { "item": "projects" }
     ],
-    "Professional": [
-      { "item": "Communication", "percentage": "90%" },
-      { "item": "Project Mangement", "percentage": "87%" },
-      { "item": "Creativity", "percentage": "53%" },
-      { "item": "Team work", "percentage": "66%" }
-    ]
-  },
+    "about": {
+        "quotes": [
+            {
+                "quote": "A battle doesn't end when the enemy has won, it ends when you give up."
+            },
+            {
+                "quote": "Burn the boat."
+            },
+            {
+                "quote": "It's not what happens to us, that matters. It's the way how you react to it that does."
+            },
+            {
+                "quote": "The happiness of your life depends upon the quality of your thoughts."
+            },
+            {
+                "quote": "A name doesn't divine a person, their acts do."
+            },
+            {
+                "quote": "Those we love don't go away, they walk beside us everyday, unseen unheard but always near, still loved, still missed and very dear."
+            },
+            {
+                "quote": "Accept what is, let go of what was, and have faith in what will be."
+            }
+        ]
+    },
+    "skills": {
+        "Technical": [
+            { "item": "TypeScript", "percentage": "40%" },
+            { "item": "JavaScript", "percentage": "35%" },
+            { "item": "C#", "percentage": "40%" },
+            { "item": "Unity", "percentage": "60%" },
+            { "item": "CSS", "percentage": "75%" },
+            { "item": "SCSS", "percentage": "70%" }
+        ],
+        "Professional": [
+            { "item": "Communication", "percentage": "7%" },
+            { "item": "Project Mangement", "percentage": "80%" },
+            { "item": "Creativity", "percentage": "80%" },
+            { "item": "Team work", "percentage": "70%" }
+        ]
+    },
 
-  "projects": [
-    {
-      "item": "Website",
-      "subTitle": "This beautifully designed website.",
-      "description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript",
-      "image": "https://cdn.jobgamesjg.xyz/files/website.png",
-      "buttons": [
-        { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/website" },
-        { "icon": "fa-solid fa-arrow-up-right-from-square", "link": "https://jobgamesjg.xyz/" }
-      ],
-      "position": true
-    },
-    {
-      "item": "Game?",
-      "subTitle": "Currently working on a game",
-      "description": "I'm currently working on a game, no spoilers yet! You will just have to wait.",
-      "image": "https://cdn.jobgamesjg.xyz/files/Secret.png",
-      "buttons": [
-        { "icon": "fa-solid fa-question", "link": "" },
-        { "icon": "fa-solid fa-question", "link": "" }
-      ],
-      "position": false
-    }
-  ],
-  "footer": [
-    {
-      "icon": "fa-brands fa-github",
-      "link": "https://github.com/JobGamesJG"
-    },
-    {
-      "icon": "fa-brands fa-youtube",
-      "link": "https://www.youtube.com/channel/UCB76PdQLx9wg4DCKbsVhyvA"
-    },
-    {
-      "icon": "fa-brands fa-twitter",
-      "link": "https://twitter.com/JobGamesJG"
-    },
-    {
-      "icon": "fa-brands fa-tiktok",
-      "link": "https://www.tiktok.com/@jobgamesjg"
-    }
-  ]
+    "projects": [
+        {
+            "title": "Website",
+            "subTitle": "This beautifully designed website made by me.",
+            "description": "Speaks for itself, my personal website (aka this one) build with NextJS and written in TypeScript",
+            "image": "https://cdn.jobgamesjg.xyz/files/website.png",
+            "buttons": [
+                { "icon": "fa-brands fa-github", "link": "https://github.com/JobGamesJG/website" },
+                {
+                    "icon": "fa-solid fa-arrow-up-right-from-square",
+                    "link": "https://jobgamesjg.xyz/"
+                }
+            ]
+        },
+        {
+            "title": "Telegraaf",
+            "subTitle": "Me and 3 others were chosen to participate in a telegraph TV program.",
+            "description": "Me and three others were chosen to participate in a TV program from the dutch news \"de telegraaf\". It's a 3 part series where we went past different places related to the holocaust. The reason behind the TV program is that more and more young people no longer believe in the Holocaust.",
+            "image": "https://i3.ytimg.com/vi/r2B0DQF2zCM/maxresdefault.jpg",
+            "video": [
+                {
+                    "vidID": "r2B0DQF2zCM",
+                    "title": "Zorgen om Holocaustkennis jongeren: 'Ik heb echt geen idee wat dat is'"
+                },
+                {
+                    "vidID": "lhz_bvN5cqA",
+                    "title": "Tiener vol verbazing in Achterhuis: 'Wat is dit?!'"
+                },
+                {
+                    "vidID": "aJfD2meXts8",
+                    "title": "Kamp Westerbork maakt indruk op scholieren: 'Hoe heeft dit kunnen gebeuren?!'"
+                }
+            ],
+            "buttons": [
+                { "icon": "fa-brands fa-youtube", "link": "https://www.youtube.com/@detelegraaf" },
+                {
+                    "icon": "fa-solid fa-arrow-up-right-from-square",
+                    "link": "https://www.telegraaf.nl/"
+                }
+            ]
+        },
+        {
+            "title": "Game?",
+            "subTitle": "Currently working on a game",
+            "description": "I'm currently working on a game, no spoilers yet! You will just have to wait.",
+            "image": "https://cdn.jobgamesjg.xyz/files/Secret.png",
+            "buttons": [
+                { "icon": "fa-solid fa-question", "link": "https://jobgamesjg.xyz/" },
+                { "icon": "fa-solid fa-question", "link": "https://jobgamesjg.xyz/" }
+            ]
+        }
+    ],
+    "socials": [
+        {
+            "icon": "fa-brands fa-github",
+            "link": "https://github.com/JobGamesJG"
+        },
+        {
+            "icon": "fa-brands fa-youtube",
+            "link": "https://www.youtube.com/channel/UCB76PdQLx9wg4DCKbsVhyvA"
+        },
+        {
+            "icon": "fa-brands fa-tiktok",
+            "link": "https://www.tiktok.com/@jobgamesjg"
+        },
+        {
+            "icon": "fa-solid fa-code-fork",
+            "link": "https://github.com/JobGamesJG/PersonalWebsite"
+        }
+    ]
 }

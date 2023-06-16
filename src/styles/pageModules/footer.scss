@@ -1,0 +1,30 @@
+.footer-container {
+    width: 100%;
+    padding: 25px 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-size: 16px;
+
+        i {
+            font-size: 17px;
+        }
+    }
+}
+
+.footer-socialsBox {
+    display: flex;
+    gap: 10px;
+
+    i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .footer-container {
+        padding: 25px 25px;
+    }
+}

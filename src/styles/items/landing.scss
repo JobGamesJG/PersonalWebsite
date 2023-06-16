@@ -1,122 +1,31 @@
-.landing-wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-
-  justify-content: space-between;
-  align-items: center;
-
-  display: flex;
-
-  img {
-    width: 500px;
-  }
-}
-
-.landing-textbox {
-  > p {
-    font-weight: 700;
-    line-height: 40px;
-    padding: 25px 0;
-  }
-
-  > p:nth-child(2) {
-    font-size: 34px;
-  }
-
-  > p:nth-child(3) {
-    font-size: 100px;
-
-    i {
-      font-style: normal;
-      color: $accent;
-    }
-  }
-
-  > a {
-    margin-top: 18px;
-    font-size: 11px;
-    font-weight: 500;
-  }
-
-  > h1 {
-    position: absolute;
-    z-index: -1;
-    color: rgba(#0f0f0f, 0.6);
-    font-size: 110px;
-    line-height: 90px;
-    letter-spacing: -0.7px;
-  }
-}
-
-@media screen and (max-width: 1290px) {
-  .landing-textbox {
-    h1 {
-      font-size: 90px;
-    }
-  }
-
-  .landing-wrapper {
-    img {
-      width: 400px;
-    }
-  }
-}
-
-@media screen and (max-width: 1085px) {
-  .landing-textbox {
-    h1 {
-      font-size: 70px;
-    }
-  }
-
-  .landing-wrapper {
-    img {
-      width: 300px;
-    }
-  }
-}
-
-@media screen and (max-width: 765px) {
-  .landing-textbox {
-    text-align: center;
-    margin-top: 200px;
-    position: absolute;
-
-    h1 {
-      display: none;
-    }
-
-    p {
-      padding: 0 0 20px 0;
-    }
-  }
-
-  .landing-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
+.landing-container {
+    max-width: 1200px;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
 
     justify-content: center;
     align-items: center;
 
+    display: flex;
+    flex-direction: column;
+
     img {
-      width: 300px;
-      z-index: -1;
+        width: 400px;
     }
-  }
+
+    i {
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
-@media screen and (max-width: 500px) {
-  .landing-textbox {
-    h1 {
-      font-size: 70px;
-      color: rgba(#0f0f0f, 0.7);
-    }
+.landing-textbox {
+    text-align: center;
+    letter-spacing: 10px;
 
-    p {
-      font-weight: 700;
-      line-height: 40px;
-      padding: 10px 0;
-    }
-  }
+    text-transform: uppercase;
+    text-shadow: 5px 5px $page-bg;
+    font-size: 30px;
 }

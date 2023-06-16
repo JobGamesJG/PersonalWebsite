@@ -1,0 +1,36 @@
+//shape-divider-LanAb
+.shape-divider-LanAb {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-LanAb svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.shape-divider-LanAb .shape-fill {
+    fill: $page-bg-second;
+}
+
+.shape-divider-SkiPro {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    background: $page-bg-second;
+}
+
+.shape-divider-SkiPro svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.shape-divider-SkiPro .shape-fill {
+    fill: $page-bg-third;
+}

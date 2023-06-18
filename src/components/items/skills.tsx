@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import config from "@/lib/Config.json";
-import { InToView } from "@/lib";
 
 export const Skills = () => {
     const [enabled, setEnabled] = useState(false);

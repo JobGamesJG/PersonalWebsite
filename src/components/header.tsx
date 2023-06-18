@@ -1,4 +1,4 @@
-import { HeaderItemAnimation } from "../lib";
+import { InToView } from "../lib";
 import config from "@/lib/Config.json";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
@@ -8,7 +8,7 @@ export const Header = () => {
     return (
         <div className="header-container">
             <motion.svg
-                variants={HeaderItemAnimation(0)}
+                variants={InToView(0, 0.5)}
                 initial="initial"
                 animate="animate"
                 viewBox="-6 0 45 30">
@@ -17,7 +17,7 @@ export const Header = () => {
             <div className="header-routes">
                 {config.header.map((data, key) => (
                     <motion.a
-                        variants={HeaderItemAnimation(key + 1)}
+                        variants={InToView(key + 1, 0.5)}
                         initial="initial"
                         animate="animate"
                         className="route button"

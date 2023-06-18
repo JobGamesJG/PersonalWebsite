@@ -1,7 +1,7 @@
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Head from "next/head";
 
-import { InToView, PageNotFoundLetterSpacingAnimation } from "@/lib";
+import { InToView, LetterSpacing } from "@/lib";
 
 export default function PageNotFound() {
     return (
@@ -12,16 +12,13 @@ export default function PageNotFound() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="PageNotFound-container">
-                <motion.p
-                    variants={PageNotFoundLetterSpacingAnimation}
-                    animate="animate"
-                    initial="initial">
+                <motion.p variants={LetterSpacing(6, 1.5)} initial="initial" animate="animate">
                     Page Not Found
                 </motion.p>
                 <motion.a
-                    variants={InToView(75)}
-                    animate="inView"
+                    variants={InToView(9, 1)}
                     initial="initial"
+                    animate="animate"
                     className="button icon"
                     href="./">
                     <i className="fa-solid fa-house" /> Return to Home

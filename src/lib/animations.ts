@@ -1,43 +1,57 @@
 import type { Variants } from "framer-motion";
 
 //default - animation//
-export const InToView = (key: number): Variants => ({
+export const InToView = (delay: number, duration: number): Variants => ({
     initial: {
         opacity: 0,
-        transform: "translateY(40px)",
+        transform: "translateY(50px)",
     },
-    inView: {
+    animate: {
         opacity: 1,
         transform: "translateY(0px)",
         transition: {
-            duration: 1,
-            delay: 0.05 * key,
+            delay: delay * 0.1,
+            duration: duration,
+            ease: [0.4, 0, 0.2, 1],
+        },
+    },
+});
+
+export const LetterSpacing = (delay: number, duration: number): Variants => ({
+    initial: {
+        opacity: 0,
+        letterSpacing: "100px",
+    },
+    animate: {
+        opacity: 1,
+        letterSpacing: "10px",
+        transition: {
+            delay: delay * 0.1,
+            duration: duration,
+            ease: [0, 0, 0, 1],
+        },
+    },
+});
+
+export const FadeInItem = (delay: number, duration: number): Variants => ({
+    initial: {
+        opacity: 0,
+    },
+    animate: {
+        opacity: 1,
+        transition: {
+            delay: delay * 0.1,
+            duration: duration,
             ease: [0.4, 0, 0.2, 1],
         },
     },
 });
 
 //header - Animation//
-export const HeaderItemAnimation = (key: number): Variants => ({
+export const HeaderItem = (key: number): Variants => ({
     initial: {
         opacity: 0,
         transform: "translateY(10px)",
-    },
-    animate: {
-        opacity: 1,
-        transform: "translateY(0px)",
-        transition: {
-            delay: 0.25 * key,
-            ease: [0.4, 0, 0.2, 1],
-        },
-    },
-});
-
-//landing - animation//
-export const LandingItemAnimation = (key: number): Variants => ({
-    initial: {
-        opacity: 0,
-        transform: "translateY(50px)",
     },
     animate: {
         opacity: 1,
@@ -84,23 +98,6 @@ export const ProjectsGrow: Variants = {
             duration: 0.3,
             delay: 0.05,
             ease: [0.6, -0.05, 0.01, 0.99],
-        },
-    },
-};
-
-//404 - Animation//
-export const PageNotFoundLetterSpacingAnimation: Variants = {
-    initial: {
-        opacity: 0,
-        letterSpacing: "100px",
-    },
-    animate: {
-        opacity: 1,
-        letterSpacing: "10px",
-        transition: {
-            delay: 1.5,
-            duration: 3,
-            ease: [0, 0, 0, 1],
         },
     },
 };

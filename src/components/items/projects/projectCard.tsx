@@ -80,9 +80,9 @@ export const ProjectCard = (props: any) => {
                     once: true,
                     amount: 0.1,
                 }}
-                variants={InToView(props.number + 1)}
+                variants={InToView(props.number + 1, 1)}
                 initial="initial"
-                whileInView={"inView"}>
+                whileInView={"animate"}>
                 <img src={props.image} alt="" />
                 <div>
                     <div>

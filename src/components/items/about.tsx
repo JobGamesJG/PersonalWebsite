@@ -25,9 +25,9 @@ export const About = () => {
                         once: true,
                         amount: 0.1,
                     }}
-                    variants={InToView(0)}
+                    variants={InToView(0, 1)}
                     initial="initial"
-                    whileInView={"inView"}>
+                    whileInView={"animate"}>
                     <p className="title">My Hobby&apos;s</p>
                     <h1 className="title main">
                         Programming,
@@ -53,9 +53,9 @@ export const About = () => {
                         once: true,
                         amount: 0.1,
                     }}
-                    variants={InToView(1)}
+                    variants={InToView(1, 1)}
                     initial="initial"
-                    whileInView={"inView"}>
+                    whileInView={"animate"}>
                     Hi, I am Job. A {age.toPrecision(9)} ... year-old programmer from the
                     Netherlands. Who knew making poorly programmed roblox games would get me this
                     far. Maybe all the tutorials and the help from my brother brought me to this

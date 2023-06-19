@@ -97,7 +97,6 @@
     width: 700px;
     height: fit-content;
     display: block;
-    align-items: center;
 
     background-color: $module-bg;
 }
@@ -183,8 +182,28 @@
         text-align: center;
     }
 
+    .projects-item {
+        width: 300px;
+    }
+
     .modal {
         width: 90%;
+
+        &.long {
+            height: 90%;
+            position: relative;
+            overflow-y: scroll;
+        }
+    }
+
+    .modal-video {
+        flex-direction: column;
+        text-align: left;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .projects-item {

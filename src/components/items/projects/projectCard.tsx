@@ -21,7 +21,7 @@ export const ProjectCard = (props: any) => {
                     variants={ProjectsVisibleHidden}
                     initial="disabled">
                     <motion.div
-                        className="modal"
+                        className={`modal ${props.video != null ? "long" : ""}`}
                         animate={control}
                         initial="disabled"
                         variants={ProjectsGrow}>
